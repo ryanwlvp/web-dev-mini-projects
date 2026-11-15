@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2F4F4F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#timer {
+    background-color: #778899;
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#timeField {
+    color: white;
+    font-size: 3em;
+    padding-bottom: 10px;
+}
+
+.buttons-wrapper {
+    position: absolute;
+    bottom: 30%;
+    display: flex;
+    gap: 20px;
+}
+
+.buttons-wrapper > button {
+    width: 70px;
+    height: 30px;
+    font-size: 1em;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+.buttons-wrapper > button:hover {
+    cursor: pointer;
+    background-color: rgb(228, 226, 226);
+}
