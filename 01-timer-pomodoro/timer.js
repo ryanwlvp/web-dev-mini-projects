@@ -1,13 +1,19 @@
 const timeField = document.getElementById("timeField");
 
 // Control buttons
-const startTimer = document.getElementById("startTimer");
-const pauseTimer = document.getElementById("pauseTimer");
-const restartTimer = document.getElementById("restartTimer");
+const startTimerButton = document.getElementById("startTimerButton");
+const pauseTimerButton = document.getElementById("pauseTimerButton");
+const restartTimerButton = document.getElementById("restartTimerButton");
 
 
 // Time options
-let defaultTime = 1498;
+let defaultTime = 5;
+
+let timeRemain = defaultTime;
+
+let runTimer = null;
+
+timeField.innerText = convertTime(defaultTime);
 
 
 // Functions
@@ -27,8 +33,50 @@ function formatNumber(num) {
     return num;
 }
 
+function startTimer() {
+    if (runTimer !== null) {
+        return
+    }
+    runTimer = setInterval(() => {     
+        if (timeRemain === 0)  {
+            restartTimer()
+            return;
+        }  
+        timeRemain -= 1;
+        timeField.innerText = convertTime(timeRemain);
+
+    }, 1000);
+
+}
+
+function pauseTimer() {
+    clearInterval(runTimer);
+    runTimer = null;
+}
+
+function restartTimer() {
+    clearInterval(runTimer);
+    timeField.innerText = convertTime(defaultTime);
+    timeRemain = defaultTime;
+    runTimer = null;
+    
+    
+}
+
+function resetTimer() {
+    restartTimer()
+}
+
+
 // Button Events
-startTimer.addEventListener('click', () => {
-    timeRemain = convertTime(defaultTime);
-    timeField.innerText = timeRemain;
+startTimerButton.addEventListener('click', () => {
+    startTimer();
+})
+
+pauseTimerButton.addEventListener('click', () => {
+    pauseTimer()
+})
+
+restartTimerButton.addEventListener('click', () => {
+    restartTimer()
 })
