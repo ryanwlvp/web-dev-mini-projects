@@ -7,7 +7,7 @@ const restartTimerButton = document.getElementById("restartTimerButton");
 
 
 // Time options
-let defaultTime = 5;
+let defaultTime = 1500;
 
 let timeRemain = defaultTime;
 
