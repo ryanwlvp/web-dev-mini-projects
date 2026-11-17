@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #A69A9B;
+    background-color: #151D27;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@ body {
 /* Área que contém os elementos do cronômetro */
 
 #timer {
-    background-color: #7D7475;
+    background-color: #424C59;
     width: 100%;
     max-width: 600px;
     min-height: 480px;
@@ -41,33 +41,36 @@ body {
     font-weight: bold;
 }
 
-/* Botões que controlam o cronômetro */
+/* Configurações gerais dos botões de controle do cronômetro */
 
 .buttonsWrapper {
+    padding: 6px 6px;
     bottom: 25%;
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    background-color: #79818C;
+    border-radius: 10px;
 }
 
 .buttonsWrapper > button { 
     padding: 5px 10px;
-    font-size: 1.3em;
     border-radius: 10px;
     border: none;
-    background-color: #948b8c;
     color: white;
-    font-family: "Encode Sans Semi Expanded", sans-serif;
-    font-weight: bold;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     
 }
 
 .buttonsWrapper > button:hover {
     cursor: pointer;
-    background-color: #544E4F;
+    background-color: #424C59;
 }
 
-
-/* Botões que alternam entre foco e pausas */
+/* Configurações gerais dos botões de controle */
 
 .options {
     padding: 0 10px;
@@ -99,7 +102,7 @@ body {
 
 .modeButton:hover {
     cursor: pointer;
-    background-color: #544E4F;
+    background-color: #79818C;
 }
 
 /* Campo de configurações */
@@ -118,5 +121,5 @@ body {
 
 #openSettings:hover {
     cursor: pointer;
-    background-color: #544E4F;
+    background-color: #79818C;
 }
