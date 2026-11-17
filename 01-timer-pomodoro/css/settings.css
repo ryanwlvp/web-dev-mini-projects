@@ -38,9 +38,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
     color: whitesmoke;
-    gap: 10px;
+    gap: 15px;
 }
 
 #inputFields {
@@ -48,6 +48,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     font-size: 12px;
     gap: 13px;
+    position: relative;
 }
 
 .inputLabels {
@@ -60,4 +61,20 @@
     border: none;
     border-radius: 5px;
     text-align: center;
+}
+
+#saveSettings {
+    margin-top: 10px;
+    grid-column: 2;
+    color: white;
+    background-color: #779acfcd;
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+    font-weight: bold;
+}
+
+#saveSettings:hover {
+    cursor: pointer;
+    background-color: #779acf;
 }
