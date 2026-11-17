@@ -14,7 +14,27 @@
                 <button class="modeButton">Short break</button>
                 <button class="modeButton">Long break</button>
             </div>
-            <button id="openSettings"><i data-lucide="settings" aria-label="Configurações"></i></button>
+            <div class="settings-wrapper">
+                <button id="openSettings" aria-label="Configurações">
+                    <i data-lucide="settings"></i>
+                </button>
+
+                <div class="time-settings" id="timeSettings">
+                    <p>Time Settings</p>
+                    <div id="inputFields">
+
+                        <label for="focusInput" class="inputLabels">Focus</label>
+                        <label for="shortInput" class="inputLabels">Short</label>
+                        <label for="longInput" class="inputLabels">Long</label>
+                        <input type="text" class="inputDefaultTime" id="focusInput">
+
+                        <input type="text" class="inputDefaultTime" id="shortInput">
+
+                        <input type="text" class="inputDefaultTime" id="longInput">
+                    </div>
+
+                </div>
+            </div>
         </nav>
         <span id="timeField"></span>
         <div class="buttonsWrapper">
