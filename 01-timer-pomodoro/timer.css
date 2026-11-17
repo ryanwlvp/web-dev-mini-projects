@@ -1,52 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
     box-sizing: border-box;
 }
 
 body {
-    background-color: #2F4F4F;
+    background-color: #A69A9B;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
+/* Área que contém os elementos do cronômetro */
+
 #timer {
-    background-color: #778899;
-    width: 600px;
-    height: 400px;
+    background-color: #7D7475;
+    width: 100%;
+    max-width: 600px;
+    min-height: 480px;
+    padding: 25px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    font-family: "Encode Sans Semi Expanded", sans-serif;
 }
 
 #timeField {
     color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 3em;
     padding-bottom: 10px;
+    font-family: "Encode Sans Semi Expanded", sans-serif;
+    font-weight: bold;
 }
 
-.buttons-wrapper {
-    position: absolute;
-    bottom: 30%;
+/* Botões que controlam o cronômetro */
+
+.buttonsWrapper {
+    bottom: 25%;
     display: flex;
     gap: 20px;
 }
 
-.buttons-wrapper > button {
-    width: 70px;
-    height: 30px;
-    font-size: 1em;
+.buttonsWrapper > button { 
+    padding: 5px 10px;
+    font-size: 1.3em;
     border-radius: 10px;
     border: none;
+    background-color: #948b8c;
+    color: white;
+    font-family: "Encode Sans Semi Expanded", sans-serif;
+    font-weight: bold;
+    
+}
+
+.buttonsWrapper > button:hover {
+    cursor: pointer;
+    background-color: #544E4F;
+}
+
+
+/* Botões que alternam entre foco e pausas */
+
+.options {
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 15px;
+    border-radius: 10px;
+    width: 100%;
+    align-items: center;
+    
+    
+}
+.modesGroup { 
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+.modeButton {
+    font-size: 1em;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-family: "Encode Sans Semi Expanded", sans-serif;
     font-weight: bold;
 }
 
-.buttons-wrapper > button:hover {
+.modeButton:hover {
     cursor: pointer;
-    background-color: rgb(228, 226, 226);
+    background-color: #544E4F;
+}
+
+/* Campo de configurações */
+
+#openSettings {
+    display: flex;
+    padding: 5px;
+    justify-self: end;
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#openSettings:hover {
+    cursor: pointer;
+    background-color: #544E4F;
 }

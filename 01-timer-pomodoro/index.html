@@ -8,14 +8,26 @@
 </head>
 <body>
     <div id="timer">
+        <nav class="options">
+            <div class="modesGroup">
+                <button class="modeButton">Focus Mode</button>
+                <button class="modeButton">Short break</button>
+                <button class="modeButton">Long break</button>
+            </div>
+            <button id="openSettings"><i data-lucide="settings" aria-label="Configurações"></i></button>
+        </nav>
         <span id="timeField"></span>
-        <div class="buttons-wrapper">
-            <button  id="startTimerButton">Start</button>
+        <div class="buttonsWrapper">
+            <button id="startTimerButton">Start</button>
             <button id="pauseTimerButton">Pause</button>
             <button id="restartTimerButton">Restart</button>
         </div>
     </div>
 
     <script src="timer.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons()
+    </script>
 </body>
 </html>
