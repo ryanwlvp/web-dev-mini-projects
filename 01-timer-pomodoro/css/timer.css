@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     padding: 0;
@@ -30,6 +29,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     font-family: "Encode Sans Semi Expanded", sans-serif;
+    position: relative;
 }
 
 #timeField {
@@ -41,13 +41,13 @@ body {
     padding-bottom: 10px;
     font-family: "Encode Sans Semi Expanded", sans-serif;
     font-weight: bold;
+    font-variant-numeric: tabular-nums;
 }
 
 /* Configurações gerais dos botões de controle do cronômetro */
 
 .buttonsWrapper {
     padding: 6px 6px;
-    bottom: 25%;
     display: flex;
     gap: 15px;
     background-color: #79818C;

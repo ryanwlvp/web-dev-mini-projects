@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
                 <button class="modeButton">Long break</button>
             </div>
             <div class="settings-wrapper">
-                <button id="openSettings" aria-label="Configurações">
+                <button id="openSettings" aria-label="Settings">
                     <i data-lucide="settings"></i>
                 </button>
 
@@ -27,11 +27,11 @@
                         <label for="focusInput" class="inputLabels">Focus</label>
                         <label for="shortInput" class="inputLabels">Short</label>
                         <label for="longInput" class="inputLabels">Long</label>
-                        <input type="text" class="inputDefaultTime" id="focusInput">
+                        <input type="number" class="inputDefaultTime" id="focusInput" min="1" max="999">
 
-                        <input type="text" class="inputDefaultTime" id="shortInput">
+                        <input type="number" class="inputDefaultTime" id="shortInput" min="1" max="999">
 
-                        <input type="text" class="inputDefaultTime" id="longInput">
+                        <input type="number" class="inputDefaultTime" id="longInput" min="1" max="999">
                     </div>
 
                 </div>
@@ -39,9 +39,9 @@
         </nav>
         <span id="timeField"></span>
         <div class="buttonsWrapper">
-            <button id="startTimerButton"><i data-lucide="play"></i></button>
-            <button id="pauseTimerButton"><i data-lucide="pause"></i></button>
-            <button id="restartTimerButton"><i data-lucide="rotate-ccw"></i></button>
+            <button id="startTimerButton" aria-label="Start"><i data-lucide="play"></i></button>
+            <button id="pauseTimerButton" aria-label="Pause"><i data-lucide="pause"></i></button>
+            <button id="restartTimerButton" aria-label="Restart"><i data-lucide="rotate-ccw"></i></button>
         </div>
     </div>
 
