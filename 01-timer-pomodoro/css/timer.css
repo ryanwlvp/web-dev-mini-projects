@@ -37,7 +37,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 3em;
+    font-size: 4em;
     padding-bottom: 10px;
     font-family: "Encode Sans Semi Expanded", sans-serif;
     font-weight: bold;
@@ -71,6 +71,8 @@ body {
     background-color: #424C59;
 }
 
+
+
 /* Configurações gerais dos botões de controle */
 
 .options {
@@ -86,11 +88,12 @@ body {
 }
 .modesGroup { 
     grid-column: 2;
+    gap: 5px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     
 }
-.modeButton {
+.modeButtons {
     font-size: 1em;
     padding: 5px 10px;
     background-color: transparent;
@@ -101,8 +104,9 @@ body {
     font-weight: bold;
 }
 
-.modeButton:hover {
+.modeButtons:hover, .modeButtons.active {
     cursor: pointer;
     background-color: #79818C;
 }
+
 
