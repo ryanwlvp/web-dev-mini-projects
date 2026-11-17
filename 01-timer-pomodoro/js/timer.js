@@ -80,3 +80,16 @@ pauseTimerButton.addEventListener('click', () => {
 restartTimerButton.addEventListener('click', () => {
     restartTimer()
 })
+
+const modeButtons = document.querySelectorAll('.modeButtons');
+
+modeButtons.forEach((clickedButton) => {
+    clickedButton.addEventListener('click', () => {
+        modeButtons.forEach((button) => {
+            button.classList.remove("active");
+        });
+
+    
+    clickedButton.classList.add("active");
+    })
+})

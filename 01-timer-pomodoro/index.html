@@ -11,9 +11,9 @@
     <div id="timer">
         <nav class="options">
             <div class="modesGroup">
-                <button class="modeButton">Focus Mode</button>
-                <button class="modeButton">Short break</button>
-                <button class="modeButton">Long break</button>
+                <button class="modeButtons" id="focusButton">Focus Mode</button>
+                <button class="modeButtons" id="shortBreakButton">Short break</button>
+                <button class="modeButtons" id="longBreakButton">Long break</button>
             </div>
             <div class="settings-wrapper">
                 <button id="openSettings" aria-label="Settings">
@@ -32,6 +32,7 @@
                         <input type="number" class="inputDefaultTime" id="shortInput" min="1" max="999">
 
                         <input type="number" class="inputDefaultTime" id="longInput" min="1" max="999">
+                        <button id="saveSettings" aria-label="Save Settings">Save</button>
                     </div>
 
                 </div>
@@ -46,6 +47,7 @@
     </div>
 
     <script src="js/timer.js"></script>
+    <script src="js/settings.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
         lucide.createIcons()
