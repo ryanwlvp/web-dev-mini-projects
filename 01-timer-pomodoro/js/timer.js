@@ -63,11 +63,6 @@ function restartTimer() {
     
 }
 
-function resetTimer() {
-    restartTimer()
-}
-
-
 // Button Events
 startTimerButton.addEventListener('click', () => {
     startTimer();
@@ -81,15 +76,3 @@ restartTimerButton.addEventListener('click', () => {
     restartTimer()
 })
 
-const modeButtons = document.querySelectorAll('.modeButtons');
-
-modeButtons.forEach((clickedButton) => {
-    clickedButton.addEventListener('click', () => {
-        modeButtons.forEach((button) => {
-            button.classList.remove("active");
-        });
-
-    
-    clickedButton.classList.add("active");
-    })
-})

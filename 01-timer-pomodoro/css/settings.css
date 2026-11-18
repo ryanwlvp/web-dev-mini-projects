@@ -29,6 +29,11 @@
 /* Janela de configurações */
 
 .time-settings {
+    display: none;
+    pointer-events: none;
+}
+
+.time-settings.active {
     border-radius: 8px;
     width: 180px;
     background-color: #7B7F94;
@@ -41,6 +46,7 @@
     padding: 5px;
     color: whitesmoke;
     gap: 15px;
+    pointer-events: auto;
 }
 
 #inputFields {
@@ -63,18 +69,31 @@
     text-align: center;
 }
 
-#saveSettings {
-    margin-top: 10px;
-    grid-column: 2;
+
+/* Botões de confirmar/fechar configurações */
+
+#saveSettings, #closeSettings {
+    cursor: pointer;
     color: white;
-    background-color: #779acfcd;
-    border: none;
     border-radius: 5px;
+    border: none;
     padding: 6px;
     font-weight: bold;
+}
+
+
+#saveSettings {
+    grid-column: 3;
+    background-color: #779acfcd;
 }
 
 #saveSettings:hover {
     cursor: pointer;
     background-color: #779acf;
+}
+
+#closeSettings {
+    grid-column: 1;
+    background-color: red;
+  
 }
