@@ -18,13 +18,15 @@ const defaultTime = {
     long: 15 * 60
 };
 
-let timeRemain = defaultTime.focus;
+let currentMode = "focus"
+
+let timeRemain = defaultTime[currentMode];
 
 let runTimer = null;
 
-let currentMode = "focus"
 
-timeField.innerText = convertTime(defaultTime.focus);
+
+timeField.innerText = convertTime(defaultTime[currentMode]);
 
 
 // Functions
