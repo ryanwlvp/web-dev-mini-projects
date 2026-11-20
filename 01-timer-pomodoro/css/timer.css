@@ -101,7 +101,7 @@ body {
     color: white;
     border-radius: 10px;
     font-family: "Encode Sans Semi Expanded", sans-serif;
-    font-weight: bold;
+    
 }
 
 .modeButtons:hover, .modeButtons.active {
