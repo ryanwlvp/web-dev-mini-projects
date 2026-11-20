@@ -94,9 +94,9 @@ modeButtons.forEach((clickedButton) => {
             button.classList.remove("active");
         });
 
-    pauseTimer()
+    pauseTimer();
     clickedButton.classList.add("active");
-    currentMode = clickedButton.dataset.mode
+    currentMode = clickedButton.dataset.mode;
     timeSelected = defaultTime[clickedButton.dataset.mode];
     timeField.innerText = convertTime(timeSelected);
     timeRemain = timeSelected;
