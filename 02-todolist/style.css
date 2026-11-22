@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px;
+    gap: 50px;
+    font-family: "Roboto";
+    background-color: rgb(241, 239, 239);
+}
+
+#page {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+/* Add Tasks */
+
+#input-field {
+    display: flex;
+    gap: 10px;
+}
+
+#input-task {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding-left: 15px;
+}
+
+label {
+    font-size: 13px;
+}
+
+#add-task {
+    background-color: #2E4159;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+#add-task:hover {
+    cursor: pointer;
+}
